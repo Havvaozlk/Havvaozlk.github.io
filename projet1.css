@@ -9,13 +9,15 @@
 
 body {
     font-family: 'ralewaymedium', arial, sans-serif;
+    width: 100%;
+    margin: auto;
     
 }
 
 main {
     max-width: 1340px;
     height: normal;
-    margin: 0 auto;
+    margin-left: 2rem;
 }
 
 header{
@@ -35,6 +37,7 @@ header{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-left: 2rem;
 }
 
 nav {
@@ -56,23 +59,22 @@ a:link {
 }
 
 .hebergements {
-    padding-top: 63px;
+    padding-top: 55px;
     padding-left: 15px;
     padding-right: 15px;
 }
 
 
 .activités {
-    padding-top: 63px;
+    padding-top: 55px;
     padding-left: 15px;
     padding-right: 15px;
 }
 
 
-.bouton {
+.sinscrire {
     color: #0065fc;
-    font-weight: bold;
-       
+    font-weight: bold;      
 }
 
 #navbouton {
@@ -83,9 +85,8 @@ align-items: center;
 
 }
 
-#navbouton nav li {
+.li1, .li2, .li3 {
     margin-right: 30px;
-   
 }
 
 
@@ -94,6 +95,10 @@ header nav li a:hover {
     color: #0065fc;
     border-top: solid #0065fc;
     
+}
+
+a.sinscrire:hover {
+    border: none;
 }
 
 #search {
@@ -141,7 +146,8 @@ input {
     height: 51px;
     width: 230px;
     border: #F2F2F2;
-    text-align: center;
+    text-align: start;
+    padding-left: 1rem;
     font-size: medium;
     color: black;
     font-weight: bold;
@@ -373,6 +379,10 @@ i.far.fa-star {
 .titre {
     width: 100%;
     height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: initial;
 }
 
 .titre h1 {
@@ -399,12 +409,17 @@ a#Afficherplus  {
     margin-left: 2rem;
 }
 
+i.fas.fa-chart-line {
+    margin-right: 2rem;
+    font-size: x-large;
+}
+
 .ppl {
     width: 83%;
     display: flex;
     border: 7px solid white;
     border-radius: 15px;
-    height: 24%;
+    height: 10rem;
     margin-left: 2rem;
     background-color: white;
     margin-bottom: 1rem;
@@ -413,7 +428,6 @@ a#Afficherplus  {
 }
 
 .pplimg {
-    width: 40%;
     height: 100%;
     display: flex;
     justify-content: flex-start;
@@ -421,17 +435,12 @@ a#Afficherplus  {
     margin-right: 1rem;
 }
 
-.pplimg img {
-    border-radius: 15px 0px 0px 15px;
-    width: 100%;
-    height: 100%;
-}
 
 #etoile {
-    margin-top: 0.5rem;
+    /*margin-top: 0.5rem;*/
     display: flex;
-    align-items: flex-end;
-    height: 53%;
+    align-items: stretch;
+    height: 20%;
 }
 
 #ref {
@@ -445,7 +454,7 @@ a#Afficherplus  {
 
 .pplimg img {
     border-radius: 15px 0px 0px 15px;
-    width: 100%;
+    width: 10rem;
     height: auto;
     object-fit: cover;
 }
@@ -561,10 +570,11 @@ footer {
     display: flex;
     background-color: #f2f2f2;
     justify-content: flex-start;
-    max-width: 1400px;
+    /*max-width: 1400px;*/
     margin: auto;
     margin-top: 3rem;
     padding-bottom: 1rem;
+    width: 100%;
 }
 
 footer div {
@@ -584,4 +594,261 @@ footer div {
 footer div a {
     color: black;
     margin-bottom: 0.5rem;
+}
+
+i.fas.fa-search {
+    display: none;
+}
+
+@media screen and (max-width: 576px)
+{
+
+    main {
+        margin-left: 0px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+        justify-content: center;
+    }
+
+
+    header nav .li1:hover, header nav .li2:hover {
+        border-bottom: 3px solid #0065fc;
+    }
+
+    header nav li a:hover {
+        border-top: none;
+    }
+
+    .li3 {
+        border-bottom: none;
+    }
+
+    #sectionsearch {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 2rem;
+
+    }
+
+    #search {
+        width: auto;
+    }
+
+    #filtres {
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #accomodationsection {
+        display: flex;
+        flex-direction: column-reverse;
+        width: auto;  
+    }
+
+    #accomodation {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        align-items: center;
+    }
+
+    #populaires {
+        width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    border-radius: 0px;
+    }
+
+    
+
+    #sectionactivites {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .titre h1 {
+        justify-content: start;
+        margin-left: 3rem;
+    }
+
+    .hbt {
+        width: 80%;
+        margin-left: 0px;
+    }
+
+    #sectionactivites article {
+        width: 80%;
+        margin-right: 0px;
+        margin-bottom: 2rem;
+        height: 13rem;
+    }
+
+    #sectionactivites {
+        display: flex;
+        align-items: center;
+    }
+
+    .column, .column2 {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 2rem; 
+    }
+
+    #headeractivites h1 {
+        margin-left: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    a#Afficherplus {
+    margin-left: 3.5em;
+    width: -webkit-fill-available;
+    margin-bottom: 0;
+    }
+
+    article#vieuxport, article#calanques {
+        height: 13rem;
+    }
+
+    .figvieuxport, .figcalanques {
+        height: 78%;
+    }
+
+    .figpomegues, .figfrioul {
+        height: 10rem;
+    }
+
+    i.fas.fa-search {
+        display: block;
+    }
+
+    span {
+        display: none;
+    }
+
+    #search button {
+        width: 3.5rem;
+        border-radius: 15px;
+    }
+
+    #sectiondiv {
+        display: flex;
+        width: 576px;
+        justify-content: center;
+    }
+
+    i.fas.fa-map-marker-alt {
+        width: 3.5rem;
+    }
+
+    #search input {
+        width: 280px;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: flex-end;
+    }
+
+    #navbouton {
+        position: absolute;
+        width: 100%;
+    }
+
+    #logo {
+        align-items: flex-start;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
+    header nav {
+        display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    width: 100%;
+    flex-direction: row;
+    }
+
+
+
+    #navbouton nav li {
+        width: 50%;
+    }
+
+    .li1, .li2 {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
+        border-bottom: solid #f2f2f2;
+    }
+
+    
+
+    .li3 {
+        display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    height: 2rem;
+    align-items: center;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    }
+
+    #sectionsearch {
+        margin-top: 2rem;
+    }
+
+    #search {
+        margin-top: 1rem;
+        margin-right: 1.5rem;
+    }
+
+    #filtres h2 {
+        margin-bottom: 0px;
+    }
+
+    .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+    }
+
+    .ppl {
+        margin-left:0;
+    }
+
+    #info {
+        margin-bottom: 1rem;
+    }
+
+
+
+
+
+
 }
