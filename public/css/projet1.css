@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'ralewaymedium';
-    src: url('raleway-medium-webfont.woff2') format('woff2'),
-         url('raleway-medium-webfont.woff') format('woff');
+    src: url('fonts/raleway-medium-webfont.woff2') format('woff2'),
+         url('fonts/raleway-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -104,7 +104,7 @@ a.sinscrire:hover {
 #search {
     display: flex;
     border: solid 0.5px #F2F2F2;
-    width: 30%;
+    width: 25rem;
     border-radius: 13px;
     overflow: hidden;
     margin-top: 10px;
@@ -125,8 +125,6 @@ a.sinscrire:hover {
 
  #filtres {
      display: flex;
-     justify-content: space-between;
-     margin-right: 400px;
  }
 
  i.fas.fa-map-marker-alt {
@@ -170,8 +168,9 @@ input {
 #filtres h2 {
         display: flex;
         font-size: 1.3em;
-        margin-top: 45px;
+        margin-top: 2.5rem;
         align-items: center;
+        margin-right: 1rem;
     }
 
 #economique {
@@ -179,23 +178,23 @@ input {
     padding-right: 17px;
     display: flex;
     align-items: center;
-    margin-top: 35px;
+    margin-top: 2rem;
     overflow: hidden;
     border-radius: 40px;
-    min-width: 170px;
-    min-height: 3.5rem;
+    height: 2.5rem;
     font-weight: bold;
+    margin-right: 1rem;
 
 
 }
 
 i.fas.fa-money-bill-wave {
-min-width: 3.5rem;
+min-width: 2.5rem;
     display: flex;
     justify-content: center;
     border: solid 0.5px #DEEBFF;
     background-color: #DEEBFF;
-    min-height: 3.5rem;
+    min-height: 2.5rem;
     overflow: hidden;
     border-radius: 100%;
     align-items: center;
@@ -205,24 +204,24 @@ min-width: 3.5rem;
 
 #familial {
     border: solid 3px #F2F2F2;
-    padding-right: 17px;
+    padding-right: 1rem;
     display: flex;
     align-items: center;
-    margin-top: 35px;
+    margin-top: 2rem;
     overflow: hidden;
     border-radius: 40px;
-    min-width: 170px;
-    min-height: 3.5rem;
+    height: 2.5rem;
     font-weight: bold;
+    margin-right: 1rem;
 }
 
 i.fas.fa-child {
-    min-width: 3.5rem;
+    min-width: 2.5rem;
     display: flex;
     justify-content: center;
     border: solid 0.5px #DEEBFF;
     background-color: #DEEBFF;
-    min-height: 3.5rem;
+    min-height: 2.5rem;
     overflow: hidden;
     border-radius: 100%;
     align-items: center;
@@ -232,24 +231,24 @@ i.fas.fa-child {
 
 #romantique {
     border: solid 3px #F2F2F2;
-    padding-right: 17px;
+    padding-right: 1rem;
     display: flex;
     align-items: center;
-    margin-top: 35px;
+    margin-top: 2rem;
     overflow: hidden;
     border-radius: 40px;
-    min-width: 170px;
-    min-height: 3.5rem;
+    height: 2.5rem;
     font-weight: bold;
+    margin-right: 1rem;
 }
 
 i.fas.fa-heart {
-    min-width: 3.5rem;
+    min-width: 2.5rem;
     display: flex;
     justify-content: center;
     border: solid 0.5px #DEEBFF;
     background-color: #DEEBFF;
-    min-height: 3.5rem;
+    min-height: 2.5rem;
     overflow: hidden;
     border-radius: 100%;
     align-items: center;
@@ -259,24 +258,24 @@ i.fas.fa-heart {
 
 #animaux {
     border: solid 3px #F2F2F2;
-    padding-right: 17px;
+    padding-right: 1rem;
     display: flex;
     align-items: center;
-    margin-top: 35px;
+    margin-top: 2rem;
     overflow: hidden;
     border-radius: 40px;
-    min-width: 170px;
-    min-height: 3.5rem;
+    height: 2.5rem;
     font-weight: bold;
+    margin-right: 1rem;
 }
 
 i.fas.fa-dog {
-    min-width: 3.5rem;
+    min-width: 2.5rem;
     display: flex;
     justify-content: center;
     border: solid 0.5px #DEEBFF;
     background-color: #DEEBFF;
-    min-height: 3.5rem;
+    min-height: 2.5rem;
     overflow: hidden;
     border-radius: 100%;
     align-items: center;
@@ -305,6 +304,7 @@ i.fas.fa-info {
     display: flex;
     align-items: center;
     margin-top: 20px;
+    margin-bottom: 1rem;
 }
 
 .hbtimg img {
@@ -650,6 +650,14 @@ i.fas.fa-search {
         flex-wrap: wrap;
     }
 
+    #filtres h2 {
+        width: 100%;
+    }
+
+    #economique, #familial, #romantique, #animaux {
+        margin-top: 1rem;
+    }
+
     #accomodationsection {
         display: flex;
         flex-direction: column-reverse;
@@ -845,10 +853,88 @@ i.fas.fa-search {
     #info {
         margin-bottom: 1rem;
     }
+}
 
+@media all and (min-width: 576px) and (max-width: 992px) {
 
+    main {
+        margin-left: 0px;
+    }
 
+    #sectionsearch {
+        margin-left: 2rem;
+    }
+    #search {
+        width: 25rem;
+    }
 
+    #filtres {
+        flex-wrap: wrap;
+    }
 
+    #filtres h2 {
+        width: 100%;
+        margin-bottom: 0;
+    }
 
+    #economique, #familial, #romantique, #animaux {
+        margin-top: 1rem;
+    }
+
+    #accomodationsection {
+        flex-direction: column-reverse;
+    }
+
+    #accomodation {
+        width: 100%;
+        background-color: white;
+    }
+
+    #populaires {
+        width: 100%;
+        margin-left: 0;
+        border-radius: 0;
+    }
+
+    .hbt {
+        width: 40%;
+    }
+
+    #activites {
+        margin-left: 2rem;
+    }
+
+    #sectionactivites {
+        width: 100%;
+    }
+
+    #sectionactivites article {
+        width: 45%;
+    }
+
+    #vieuxport {
+        margin-bottom: 2rem;
+    }
+
+    .column, .column2 {
+        width: 45%;
+    }
+
+    article#pomegues, article#frioul, article#notredame, article#longchamps {
+        width: 100%;
+    }
+
+    footer {
+        justify-content: space-between;
+    }
+
+    footer div {
+        margin-right: 0;
+    }
+}
+
+@media all and (min-width: 992px) and (max-width: 1200px) {
+    #search {
+        width: 25rem;
+    }
 }
