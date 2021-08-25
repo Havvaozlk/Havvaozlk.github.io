@@ -597,6 +597,10 @@ i.fas.fa-search {
     display: none;
 }
 
+article:hover {
+    transform: scale(1.02);
+}
+
 @media screen and (max-width: 650px)
 {
 
