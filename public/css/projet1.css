@@ -597,7 +597,7 @@ i.fas.fa-search {
     display: none;
 }
 
-@media screen and (max-width: 375px)
+@media screen and (max-width: 414px)
 {
 
     main {
@@ -854,7 +854,7 @@ i.fas.fa-search {
     }
 }
 
-@media all and (min-width: 376px) and (max-width: 768px) {
+@media all and (min-width: 415px) and (max-width: 768px) {
 
     main {
         margin-left: 0px;
