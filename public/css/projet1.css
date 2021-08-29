@@ -158,6 +158,7 @@ input {
     font-size: medium;
     font-weight: bold;
     border: none;
+    cursor: pointer;
 }
 
 #sectionsearch {
@@ -601,6 +602,10 @@ article:hover {
     transform: scale(1.02);
 }
 
+#assistance {
+    margin-right: 1rem;
+}
+
 @media screen and (max-width: 650px)
 {
 
@@ -933,6 +938,10 @@ article:hover {
 
     footer div {
         margin-right: 0;
+    }
+
+    div #assistance {
+        margin-right: 1rem;
     }
 }
 
